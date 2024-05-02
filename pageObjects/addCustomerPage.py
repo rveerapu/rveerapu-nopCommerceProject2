@@ -73,7 +73,7 @@ class AddCustomer:
         elif role=='Guests':
             # Here user can be Registered( or) Guest, only one
             time.sleep(3)
-            self.driver.find_element(By.XPATH, "//*[@id='SelectedCustomerRoleIds_taglist']/li/span[2]").click()
+            # self.driver.find_element(By.XPATH, "//*[@id='SelectedCustomerRoleIds_taglist']/li/span[2]").click()
             self.listitem = self.driver.find_element(By.XPATH, self.lstitemGuests_xpath)
         elif role=='Registered':
             self.listitem = self.driver.find_element(By.XPATH, self.lstitemRegistered_xpath)
